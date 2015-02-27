@@ -7,15 +7,17 @@ Features:
 * For students who were not on hipcat for a give day, put absent.
 
 Software Requirements:
-Use node.js with express to connect to hipchat.
-
-The node server should accept a request for a specific day, example
+*Use node.js with express to connect to hipchat.
+*The node server should accept a request for a specific day, example
 http://localhost:8000/2015-01-01/, and return a json object that
 contains the a key for each student and the value should be the
 first time they were seen on that date.
-
-Use angular to connect to the your node.js server and request the
+*Use angular to connect to the your node.js server and request the
 data for all the dates since the beginning on this class, 2015-01-19.
-
-Use angular to display the data about students in a table, extra
+*Use angular to display the data about students in a table, extra
 credit for sorting and filtering options. =)
+
+Way of working:
+* Clone this repo and work in your own branch.
+* Push your branch to this repo at least daily to have a backup of your work.
+* Respect each others flow. http://heeris.id.au/2013/this-is-why-you-shouldnt-interrupt-a-programmer/

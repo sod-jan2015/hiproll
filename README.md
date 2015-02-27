@@ -1,12 +1,10 @@
 # hiproll
+
 Features:
-#1: Grab a list of all students who have connected to hipchat.
-(https://sodjan2015.hipchat.com/)
-#2: Create a table with columns for each student who has connected,
-and rows for each day since the beginning of this bootcamp.
-#3: Put the earliest time each student was seen on hipchat, for each
-day.
-#4 For students who were not on hipcat for a give day, put absent.
+* Grab a list of all students who have connected to hipchat. (https://sodjan2015.hipchat.com/)
+* Create a table with columns for each student who has connected, and rows for each day since the beginning of this bootcamp.
+* Put the earliest time each student was seen on hipchat, for each day.
+* For students who were not on hipcat for a give day, put absent.
 
 Software Requirements:
 Use node.js with express to connect to hipchat.

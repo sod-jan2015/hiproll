@@ -7,10 +7,10 @@ Features:
 * For students who were not on hipcat for a give day, put absent.
 
 Additional (Starter) Features:
-*On the Node.js server, gather data from hipchat. 
-*Have paths on node.js, such as /hiproll/rooms, which will respond with the rooms object from hipchat, or a /hiproll/roomname path, which will respond with the last 75 messages object from hipchat. 
-*Then, in angular, write a program which processes the rooms and message data, and displays it. 
-*If possible, sort through the data, and display the number of messages per day in each room.
+* On the Node.js server, gather data from hipchat. 
+* Have paths on node.js, such as /hiproll/rooms, which will respond with the rooms object from hipchat, or a /hiproll/roomname path, which will respond with the last 75 messages object from hipchat. 
+* Then, in angular, write a program which processes the rooms and message data, and displays it. 
+* If possible, sort through the data, and display the number of messages per day in each room.
 
 
 Software Requirements:

@@ -46,7 +46,7 @@ app.get('/messages', function(req, res, next){
         setTimeout(function(){
             console.log("length: " + messageArray.length);
             res.send(messageArray);
-        }, 5000);
+        }, 3000);
 
     });
 

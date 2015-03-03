@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body ng-app="hipApp">
+
+<div ng-controller="roomCtrl">
+    <h3>Chat Rooms:</h3>
+    <p ng-repeat="room in rooms">{{room.name}}</p>
+</div>
+<div ng-controller="hiprollCtrl">
+    <p ng-repeat="msg in hiproll">On {{msg.date}}, {{msg.from.name}} wrote "{{msg.message}}".</p>
+</div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <!--<script src="bower_components/angular-route/angular-route.js"></script>-->
+  <script src="js/app.js"></script>
+  <script src="js/hipchatter.js"></script>
+  <!--<script src="components/version/version.js"></script>-->
+  <!--<script src="components/version/version-directive.js"></script>-->
+  <!--<script src="components/version/interpolate-filter.js"></script>-->
+</body>
+</html>

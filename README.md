@@ -1,30 +1,36 @@
-# hiproll
+# node-js-getting-started
 
-Features:
-* Grab a list of all students who have connected to hipchat. (https://sodjan2015.hipchat.com/)
-* Create a table with columns for each student who has connected, and rows for each day since the beginning of this bootcamp.
-* Put the earliest time each student was seen on hipchat, for each day.
-* For students who were not on hipcat for a give day, put absent.
+A barebones Node.js app using [Express 4](http://expressjs.com/).
 
-Additional (Starter) Features:
-* On the Node.js server, gather data from hipchat. 
-* Have paths on node.js, such as /hiproll/rooms, which will respond with the rooms object from hipchat, or a /hiproll/roomname path, which will respond with the last 75 messages object from hipchat. 
-* Then, in angular, write a program which processes the rooms and message data, and displays it. 
-* If possible, sort through the data, and display the number of messages per day in each room.
+This application support the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
 
+## Running Locally
 
-Software Requirements:
-*Use node.js with express to connect to hipchat.
-*The node server should accept a request for a specific day, example
-http://localhost:8000/2015-01-01/, and return a json object that
-contains the a key for each student and the value should be the
-first time they were seen on that date.
-*Use angular to connect to the your node.js server and request the
-data for all the dates since the beginning on this class, 2015-01-19.
-*Use angular to display the data about students in a table, extra
-credit for sorting and filtering options. =)
+Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
 
-Way of working:
-* Clone this repo and work in your own branch.
-* Push your branch to this repo at least daily to have a backup of your work.
-* Respect each others flow. http://heeris.id.au/2013/this-is-why-you-shouldnt-interrupt-a-programmer/
+```sh
+$ git clone git@github.com:heroku/node-js-getting-started.git # or clone your own fork
+$ cd node-js-getting-started
+$ npm install
+$ npm start
+```
+
+Your app should now be running on [localhost:5000](http://localhost:5000/).
+
+## Deploying to Heroku
+
+```
+$ heroku create
+$ git push heroku master
+$ heroku open
+```
+
+## Documentation
+
+For more information about using Node.js on Heroku, see these Dev Center articles:
+
+- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
+- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
+- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
+- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
+- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
